@@ -63,12 +63,13 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: darken(@zk-fg, 55%);
 }
 
 .entity {
   &.name.type {
-    color: @yellow;
+    // color: @yellow;
+    color: @green;
     text-decoration: underline;
   }
 
@@ -158,7 +159,8 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      // color: @light-gray;
+      color: darken(@cyan, 30%);
     }
 
     &.string,
