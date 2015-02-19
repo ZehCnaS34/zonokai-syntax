@@ -142,10 +142,13 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @magenta;
 
+  .source.coffee.embedded {
+    color: @orange;
+  }
+
 
   &.regexp {
     color: @cyan;
-
     .source.ruby.embedded {
       color: @orange;
     }
@@ -159,7 +162,6 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
     &.comment {
-      // color: @light-gray;
       color: darken(@cyan, 30%);
     }
 
@@ -167,7 +169,6 @@ atom-text-editor .search-results .marker.current-result .region,
     &.variable,
     &.parameters,
     &.array {
-      // color: @syntax-text-color;
       color: darken(@cyan,10%);
     }
 
